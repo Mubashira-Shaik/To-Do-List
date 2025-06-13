@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.priority {
+margin-right: 10px;
+}
+@keyframes color {
+0%	{ background: #33CCCC; } 20% { background: #33CC36; }
+	40%	{	background:	#B8CC33;	}
+	60%	{	background:	#FCCA00;	}
+	80%	{	background:	#33CC36;	}
+	100%	{	background:	#33CCCC;	}
+}					
+
+
+
+body {
+background-image: url(to-do-list-image.jpg);
+
+background-size: cover; background-position: center;
+margin: 0; /* Remove default margin */ padding: 0; /* Remove default padding */
+}
+
+.container {
+max-width: 600px; margin: 50px auto ; padding: 20px;
+background-color: rgba(247, 244, 246, 0.8); /* Add background color with opacity */ border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: column; /* Align children vertically */
+}
+
+.input-container { display: flex;
+justify-content: space-between; /* Space between input and button */ align-items: center; /* Align items vertically */
+}
+
+#toDoContainer {
+margin-top: 10px; /* Add some space between input and to-do list */
+}
+
+#inputField {
+flex: 1; /* Take remaining space */
+margin-right: 10px; /* Add some spacing between input field and button */
+}
+
+#reminderInput { margin-right: 10px;
+}
+
+
+</style>
+</head>
+<body >
+
+<div class="container">
+<h1>Work Remainder</h1>
+<div id="toDoContainer">
+<!-- To-Do Items Will Be Appended Here -->
+</div>
+<div class="input-container">
+<input type="text" id="inputField" placeholder="Add a new item...">
+<input type="datetime-local" id="reminderInput">
+<select id="priorityInput" class="priority">
+<option value="important">Important</option>
+<option value="unimportant">unimportant</option>
+
+</select>
+<button id="addButton">Add</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

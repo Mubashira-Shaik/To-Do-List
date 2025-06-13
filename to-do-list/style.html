@@ -1,0 +1,73 @@
+body {
+background-image: url(leaf.png); background-size: cover; background-position: center; margin: 0;
+padding: 0;
+}
+
+
+.container {
+max-width: 800px; margin: 50px auto; padding: 20px;
+background-color: #dde2dd; border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+flex-direction: column;
+}
+
+h1 {
+text-align: center; color: #333;
+}
+
+#toDoContainer { margin-top: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;
+}
+
+.todo-item {
+margin-bottom: 10px; display: flex;
+background-color: #f9f9f9; padding: 10px;
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item input[type="checkbox"] { margin-right: 10px;
+}
+
+.todo-item span { flex: 1;
+color: #333;
+}
+
+.todo-item button { background-color: #ff6b6b; color: #fff;
+border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.todo-item button:hover { background-color: #ff4949;
+}
+
+#inputField {
+width: calc(100% - 30px); padding: 10px;
+border: 1px solid #a6a6a6; border-radius: 5px 0 0 5px; margin-right: 10px;
+}
+
+#reminderField, #timerField {
+width: calc(100% - 30px); padding: 10px;
+border: 1px solid #a6a6a6; border-radius: 5px;
+margin-right: 10px; display: none;
+}
+
+#addButton {
+background-color: #4caf50; color: #fff;
+border: none; padding: 10px 20px;
+border-radius: 0 5px 5px 0; cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+#addButton:hover { background-color: #0c5d10;
+}
+.timestamp {
+margin-left: auto; margin-right: 10px; font-size: 12px; color: #999;
+}
+
+.todo-item span { flex: 1;
+color: #333;
+text-decoration: none;
+transition: text-decoration 0.2s ease;
+}
